@@ -1,0 +1,11 @@
+{
+  "name": "yet_another_256",
+  "version": "1.0.0",
+  "description": "a 256 clone with elixir backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
