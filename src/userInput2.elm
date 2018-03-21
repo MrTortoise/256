@@ -1,6 +1,7 @@
 import Html exposing (..)
 import Keyboard exposing (KeyCode)
 import Set exposing (..)
+import Char exposing(fromCode)
 
 main : Program Never Model Msg
 main =
@@ -39,7 +40,8 @@ view : Model -> Html Msg
 view model =
   let
       keyString =
-        Set.map toString model.pressedKeys
+        Set.map fromCode model.pressedKeys
+        |> Set.map toString
         |> Set.foldr String.append ""
   in
       div []
